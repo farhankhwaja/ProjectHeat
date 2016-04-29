@@ -1,0 +1,280 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #fff;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+  height: 100%;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 5px;
+  color: #fff;
+  border-top: 1px solid #e5e5e5;
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  background-color: #3366cc;
+  width: 100%;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+.face {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 48px;
+  margin: 16px;
+}
+
+.remove-status {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+.login-title
+{
+    color: #555;
+    font-weight: 400;
+    display: block;
+}
+
+.loginLine {
+    width: 80%;
+}
+
+.login-block {
+    /*width: 100%;*/
+    /*min-height: 200px;*/
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    border: 1px solid #3366cc;
+    border-top: 5px solid #3366cc;
+    margin: 0 auto;
+}
+
+.login-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/*.login-block input {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 0 20px 0 50px;
+    outline: none;
+}*/
+
+.login-block input:active, .login-block input:focus {
+    border: 1px solid #3366cc;
+}
+
+.login-block button {
+    border: 1px solid #3366cc;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-block button:hover {
+    background: #D8D8D8;
+    color: #000;
+}
+
+.toppad{
+  padding-bottom: 5px;
+}
+
+.navbar-default {
+  background-color: #3366cc;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #ff66cc;
+}
+
+.navbar-default .navbar-brand{
+  color: #fff;
+}
+
+.table-user-information{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.content{
+  overflow: auto;
+  margin-bottom: 30px;
+}
+
+.analyticsInfo {
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  /*margin-bottom: 5px;*/
+  border: 1px solid #3366cc;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.personInfo {
+    height: auto;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #3366cc;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.personInfo input[type="checkbox"], .analyticsInfo input[type="checkbox"]{
+    display: none;
+}
+.personInfo input[type="checkbox"]:checked + label, .analyticsInfo input[type="checkbox"]:checked + label {
+    color: #fff;
+}
+
+.personInfo > *, .analyticsInfo > *{
+    cursor: pointer;
+}
+
+.personInfo:hover, .analyticsInfo:hover{
+    background-color: #3366cc;
+    color: #fff;
+}
+
+.highlightPersonInfo {
+    height: auto;
+    width: 90px;
+    background-color: #3366cc;
+    border-radius: 10px;
+    display: inline-block;
+    /*padding: 10px;*/
+    margin-bottom: 5px;
+    /*border: 1px solid #3366cc;*/
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.coupon-text{
+  color: #ff66cc;
+}
+
+.clickable{
+  padding: 5px 5px;
+}
+
+.table td,th {
+   text-align: center;   
+}
+
+.chartDiv {
+  padding: 5px;
+  border: 1px solid #3366cc;
+  margin: 2px;
+}
+
+.modal-dialog {
+  width: 100%;
+}
+
+.inlineChart {
+  display: inline-block;
+}

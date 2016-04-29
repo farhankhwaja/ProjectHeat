@@ -1,0 +1,92 @@
+<div class="header">
+  <div class="navbar navbar-default navbax-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#/">HEAT-UI</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="#/signup" ng-show="authData === null">SignUp</a></li>
+          <li><a href="#/analytics" ng-show="authData !== null">Analytics</a></li>
+          <li><a href="#/requests" ng-show="authData !== null">All Requests</a></li>
+          <li><a href class="logout" ng-click="logout()" ng-show="authData !== null">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row toppad">
+    <div class="col-md-offset-2 col-sm-offset-3">
+      <div class="col-sm-8 col-md-8">
+        <label for="visitorID" class="sr-only">Vistor ID</label>
+        <div class="input-group">
+        <div class="input-group-addon">
+          <label for="visitorID">Visitor ID</label>
+          </div>
+          <input type="text" id="visitorNumber" ng-model="visitorNumber" class="form-control" name="visitorNumber" placeholder="Visitor ID"  required>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-2">
+        <div class="input-group">
+          <button class="btn btn-primary btn-block" ng-click='addReq()'>Generate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row toppad">
+    <!-- <div class="col-md-offset-2 col-sm-offset-4 col-md-9 col-sm-5"> -->
+      <uib-accordion class="accordion" close-others="true" is-open="list.isopen">
+                <uib-accordion-group>
+                    <uib-accordion-heading>
+                        Latest Request for Visitor ID : {{latestReq.visitorID}}
+                    </uib-accordion-heading>
+                    <!-- <div class="row" style="padding-bottom:5px">
+                      <div class="col-md-offset-3 col-md-5 text-center">
+                        <div class="input-group">
+                          <div class="input-group-addon">
+                            <label for="visitorID">Visitor ID</label>
+                          </div>
+                          <input type="text" ng-disabled="true" value="{{request.visitorID}}" class="form-control">
+                        </div>
+                      </div>
+                    </div> -->
+                    <div class="row" style="padding-bottom:5px">
+                      <div class="col-md-offset-2 col-md-8 text-center table-responsive">
+                        <h3>Visited Store Coupons</h3>
+                        <table class="table table-user-information table-stripped">
+                          <tr>
+                            <th>Shop</td>
+                            <th>Coupon</td>
+                          </tr>
+                          <tbody ng-repeat="visitedCoupons in coupons.visited">
+                            <tr>
+                              <td>{{visitedCoupons.shop}}</td>
+                              <td>{{visitedCoupons.text}}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-md-offset-2 col-md-8 text-center">
+                        <h3>New Store Coupons</h3>
+                        <table class="table table-user-information">
+                          <tr>
+                            <th>Shop</td>
+                            <th>Coupon</td>
+                          </tr>
+                          <tbody ng-repeat="otherCoupons in coupons.other">
+                            <tr>
+                              <td>{{otherCoupons.shop}}</td>
+                              <td>{{otherCoupons.text}}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </uib-accordion-group>   
+            </uib-accordion>
+    </div>
+  <!-- </div> -->
+</div>
