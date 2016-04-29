@@ -40,11 +40,10 @@
 
 Make sure the above dependencies are install. 
 
-1. Goto Folder GUI and Run <code>bower install</code>.
-2. Goto Folder GUI and Run <code>npm install</code>.
-3. Goto Folder PythonCode and Run <code>python3 firebase-manager.py</code>.
-4. Goto Folder GUI and Run <code>grunt serve --force</code>
-5. Open browser `http://localhost:9000/`
+1. Goto Folder GUI and Run <code>npm install</code> and then run <code>bower install</code>.
+2. Goto Folder PythonCode and Run <code>python3 firebase-manager.py</code>.
+3. Goto Folder GUI and Run <code>grunt serve --force</code>
+4. Open browser `http://localhost:9000/`
 
 ## Questions
 
