@@ -47,5 +47,5 @@ Make sure the above dependencies are install.
 
 ## Questions
 
-For questions, contact Anshul Ravat (anshulr@usc.edu), Farhan Khwaja (fkhwaja@usc.edu), Satheesh Ravi (satheeshr@usc.edu)
+For questions, contact Anshul Ravat (anshulra@usc.edu), Farhan Khwaja (fkhwaja@usc.edu), Satheesh Ravi (satheesr@usc.edu)
 
